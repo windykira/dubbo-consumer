@@ -15,6 +15,6 @@
            http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
 
 
-    <import resource="classpath:dubbo-consumer.xml"/>
+    <import resource="classpath*:dubbo-consumer.xml"/>
 
 </beans>
