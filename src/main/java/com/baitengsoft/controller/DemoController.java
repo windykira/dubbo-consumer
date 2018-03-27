@@ -1,6 +1,7 @@
 package com.baitengsoft.controller;
 
-import com.baitengsoft.service.DemoService;
+import com.baiten.DemoService;
+import com.result.ReturnResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,8 +21,14 @@ public class DemoController {
     @RequestMapping("/hello")
     public String index(HttpServletRequest request) {
 
-        String str = demoService.sayHello("Jack");
-        System.out.println(str);
+        ReturnResult returnValue;
+        try {
+            returnValue = demoService.speak("Jack");
+            String str = "";
+        }catch (Exception e){
+            String str = "";
+            e.printStackTrace();
+        }
         return "success";
 
     }

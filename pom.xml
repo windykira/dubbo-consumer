@@ -22,8 +22,8 @@
     </dependency>
 
     <dependency>
-      <groupId>com.baitengsoft</groupId>
-      <artifactId>dubbo.interface</artifactId>
+      <groupId>com.baiten.dubbo</groupId>
+      <artifactId>dubbo-api</artifactId>
       <version>1.0-SNAPSHOT</version>
     </dependency>
 
